@@ -118,8 +118,6 @@ expirationDateMasked.on("accept", () => {
 })
 
 function updateExpirationDate(date) {
-  const cardType = cardNumberMasked.masked.currentMask.cardtype
-  setCardType(cardType)
   const ccExpiration = document.querySelector(".cc-extra .value")
   ccExpiration.innerText = date.length === 0 ? "02/32" : date
 }
